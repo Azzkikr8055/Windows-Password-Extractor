@@ -1,0 +1,2 @@
+Antivirus may detect mimikatz so if it gets deleted automatically
+then there is a copy of it in the .zip file.

